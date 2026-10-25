@@ -6,7 +6,7 @@ h1{font-size:1.5rem}h2{font-size:1.2rem;margin-top:2em}h3{font-size:1.05rem}a{co
 .table-wrap{overflow-x:auto}table{border-collapse:collapse}th,td{border:1px solid #ccc;padding:8px;text-align:left}footer{margin-top:3em;font-size:.85rem;color:#555}
 </style></head><body><p><a href="#data-deletion">データの削除について</a></p>
 <h1>YORON プライバシーポリシー</h1>
-<p>制定日: 2026年8月3日 / 改定日: 2026年9月19日 / バージョン: 2026-09-19</p>
+<p>制定日: 2026年8月3日 / 改定日: 2026年10月25日 / バージョン: 2026-10-25</p>
 <p>ZOKUJIN（以下「当社」）は、アプリケーション「YORON」（以下「本サービス」）において取得する情報の取り扱いについて、以下のとおり定めます。</p>
 <h2>1. 取得する情報</h2>
 <p>当社は、本サービスの提供にあたり、次の情報を取得します。</p>
@@ -20,7 +20,7 @@ h1{font-size:1.5rem}h2{font-size:1.2rem;margin-top:2em}h3{font-size:1.05rem}a{co
 <p><strong>(4) 端末情報</strong></p>
 <ul><li>OS の種類とバージョン、アプリのバージョン、端末の識別子</li></ul>
 <p><strong>(5) 広告に関する情報</strong></p>
-<ul><li>Googleの広告SDKが取得・送信するIPアドレス、端末・アプリの識別子、広告の表示・操作・動画視聴の情報、クラッシュ・性能等の診断情報。IPアドレスからおおよその位置が推定される場合があります。</li><li>広告に関する同意の選択、およびリワード広告の視聴ID、視聴完了通知、報酬付与の記録</li><li>オファーウォールの成果照合用の識別子、案件・成果・コイン付与に関する情報</li></ul>
+<ul><li>Googleの広告SDKが取得・送信するIPアドレス、端末・アプリの識別子、広告の表示・操作・動画視聴の情報、クラッシュ・性能等の診断情報。IPアドレスからおおよその位置が推定される場合があります。</li><li>広告に関する同意の選択、およびリワード広告の視聴ID、視聴完了通知、報酬付与の記録</li><li>オファーウォールの成果照合用の識別子、案件・成果・コイン付与に関する情報</li><li>当社の広告の効果測定のためにMetaの計測SDKが取得・送信する情報。端末・アプリの識別子（iPhoneでは「アプリからのトラッキング要求」を許可した場合に限り広告ID）、端末の機種・OS等の情報、アプリのインストール・起動、およびアプリ内での行動（登録の完了、使い方の案内の完了、はじめての予想への参加、プッシュ通知の許可、オファーウォールの利用と案件の成果）</li></ul>
 <p><strong>(6) 本人確認・通知・ギフト交換に関する情報</strong></p>
 <ul><li>SMSによる本人確認のために登録する電話番号、認証状況</li><li>プッシュ通知の配信先トークン、通知内容、配信結果</li><li>ギフト交換の申込・発行・交換用URLに関する情報</li></ul>
 <h2>2. 取得しない情報</h2>
@@ -45,6 +45,7 @@ h1{font-size:1.5rem}h2{font-size:1.2rem;margin-top:2em}h3{font-size:1.05rem}a{co
 <tr><td>Google / Apple</td><td>選択したログイン方法に応じたアカウント認証</td></tr>
 <tr><td>Google（AdMob、User Messaging Platform）</td><td>広告配信・測定・不正防止、同意管理。広告SDKが取得する情報とリワード視聴ID</td></tr>
 <tr><td>SKYFLAG</td><td>オファーウォールの表示・成果照合。アカウントと対応付けた専用識別子、掲載場所、案件成果等</td></tr>
+<tr><td>Meta（Meta Platforms, Inc.）</td><td>当社の広告の効果測定と配信の最適化。第1項(5)のMetaの計測SDKが取得する情報</td></tr>
 <tr><td>デジコ</td><td>ギフト発行・照会。取引識別子、ギフトの種類・金額・数量</td></tr>
 <tr><td>Expo / Apple / Google</td><td>プッシュ通知の配送。配信先トークン、通知文、通知から開く画面等のデータ</td></tr>
 <tr><td>Google Cloud</td><td>ギフト発行処理を行うサーバーの運用</td></tr>
@@ -53,9 +54,11 @@ h1{font-size:1.5rem}h2{font-size:1.2rem;margin-top:2em}h3{font-size:1.05rem}a{co
 </table></div>
 <p>AdMobへの広告要求は非パーソナライズに設定しています。この設定でも、広告配信、測定、不正防止等のための情報取得・送信は行われる場合があります。必要な地域では同意画面を表示し、必要に応じてマイページの「広告のプライバシー設定」から選択を変更できます。</p>
 <p>リワード広告ではランダムな視聴IDをGoogleに送信し、当社のサーバーでアカウントと対応付けて報酬を処理します。当社がAdMob広告要求にメールアドレス、表示名、投票内容を明示的に追加することはありません。</p>
+<p>Metaの計測SDKは、利用規約・プライバシーポリシーに同意した後に動作します。iPhoneでは、「アプリからのトラッキング要求」を許可した場合に限り広告IDを送信し、許可しない場合は広告IDを含まない形で送信します。Androidでは、端末の設定で広告IDの利用を停止できます。当社がMetaにメールアドレス、表示名、電話番号、投稿や投票の内容を送信することはありません。</p>
 <p>オファーウォールでは専用識別子を用いて成果を照合します。広告主のページやギフト交換先に移動した後の情報の取り扱いについては、各サービスのプライバシーポリシーもご確認ください。</p>
 <p>Googleのプライバシーポリシー: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
 <p>Googleのサービスを使用するサイトやアプリから収集した情報の使用: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p>Metaのプライバシーポリシー: <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></p>
 <h2>7. 保存期間とアカウント削除後の取り扱い</h2>
 <p>アカウントの利用中は、本サービスの提供に必要なアカウント・プロフィール・投稿・利用履歴を保存します。アカウントを削除すると、表示名・ハンドル・自己紹介・プロフィールの属性、チャット発言、フォロー・ブロック関係、メールアドレス・電話番号・外部ログイン連携・ログインセッション、通知先トークン等を削除または利用できない値に置き換えます。</p>
 <p>取引台帳・予想への参加・精算・ギフト発行・広告報酬・通報等の記録は、残高の整合確認、二重付与や不正利用の防止、問い合わせ・紛争への対応のため、退会後も保持する場合があります。これらには内部ユーザーID、端末識別子や成果照合用識別子との対応が残る場合があります。これらを、個人との再対応ができない匿名情報と一律に扱うことはしません。</p>
@@ -79,4 +82,4 @@ h1{font-size:1.5rem}h2{font-size:1.2rem;margin-top:2em}h3{font-size:1.05rem}a{co
 <h2>11. 運営者情報（事業者情報）</h2>
 <ul><li>事業者: 株式会社zokujin（ZOKUJIN, K.K.）</li><li>所在地・会社概要: <a href="https://zokujin.jp">https://zokujin.jp</a></li><li>お問い合わせ: info@zokujin.jp</li></ul>
 <p>以上</p>
-<footer>YORON / version 2026-09-19 / 株式会社zokujin</footer></body></html>
+<footer>YORON / version 2026-10-25 / 株式会社zokujin</footer></body></html>
